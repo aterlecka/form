@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js"></script>
+</head>
+<body>
+    <section class="product-form">
+        <h1 class="product-form__title">Przetestuj nasze produkty</h1>
+        <div class="product-form__description">
+            Chcesz przetestowac nasz produkt przed zakupem? Wypełnij formularz, a
+            skontaktujemy się z Tobą!
+        </div>
+        <form class="product-form__form" id="productList">
+            <div class="product-form__group">
+                <div class="product-form__box">
+                    <label class="product-form__label" for="info">Imię i nazwisko</label></br>
+                    <input class="product-form__input" id="info" name="name" type="text"placeholder="Wprowadź imię i nazwisko" /></br>
+                    <label class="product-form__label" for="telephone">Numer telefonu...</label></br>
+                    <input class="product-form__input" id="telephone" name="phone" type="text" placeholder="Wpisz numer telefonu"/></br>
+                </div>
+                <div class="product-form__box">
+                    <label class="product-form__label" for="company">Nazwa firmy</label></br>
+                    <input class="product-form__input" id="company" name="company" type="text" placeholder="Wpisz nazwę firmy.." /></br>
+                    <label class="product-form__label" for="email">Adres email</label></br>
+                    <input class="product-form__input" id="email" name="email" type="email" placeholder="Wpisz adres email..." /></br>
+                </div>
+            </div>
+            <div class="product-form__checkbox">
+                <label class="container-checkbox">  Zamówienie przyspieszone
+                    <input type="checkbox" type="checkbox" class="check" onclick="showSpecialElement()" name="quickOrder"  id="agree">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <input type="text" id="special" name="message"  class="product-form__special">
+            <button class="product-form__button" type="submit">Zamów próbki</button>
+        </form>
+    </section>
+    <p class="results__display" id="output"></p>
+</body>
+</html>
